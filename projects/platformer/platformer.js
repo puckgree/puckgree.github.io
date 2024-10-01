@@ -16,10 +16,10 @@ $(function () {
       setInterval(main, 1000 / frameRate);
     }
     // Create walls - do not delete or modify this code
-    createPlatform(-50, -50, canvas.width + 100, 50); //top
-    createPlatform(-50, canvas.height - 10, canvas.width + 100, 200); //right
-    createPlatform(-50, -50, 50, canvas.height + 500); //bottom
-    createPlatform(canvas.width, -50, 50, canvas.height + 100);
+    createPlatform(200, 20, canvas.width + 500, 20); //top
+    createPlatform(-90, canvas.height - 30, canvas.width + 100, 200); //right
+    createPlatform(-60, -20, 50, canvas.height + 13); //bottom
+    createPlatform(canvas.width, -90, 60, canvas.height + 200);
 
     /**
      * Uncomment the drawGrid() function call below to add a "grid" to your platformer game's screen
@@ -38,28 +38,33 @@ $(function () {
     // Create platforms
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
-
-
-
-    
+createPlatform(124,345,200,20)
+createPlatform(200,454,200,20)
+createPlatform(600,340,200,20)
+createPlatform(600,545,200,20)
+createPlatform(400,600,200,20)
+createPlatform(930,400,200,20)
+createPlatform(900,267,200,20)
+createPlatform(1200,500,200,20)
     // TODO 2
     // Create collectables
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
-
-
-
-    
+    createCollectable("steve", 600, 500, 0.5 , 0.7)
+    createCollectable("grace", 400, 600, 0.5 , 0.7)
+    createCollectable("max", 1200, 445, 0.5 , 0.7)
+    createCollectable("database", 900, 200, 0.5 , 0.7)
+    createCollectable("kennedi", 930, 345, 0.5 , 0.7)
     // TODO 3
     // Create cannons
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
-
-
-
-    
+    createCannon("left", 300, 800)
+    createCannon("top", 800, 900)
+    createCannon("right", 800, 0)
+    createCannon("bottom", 600, 1000)
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
     /////////////////////////////////////////////////
